@@ -10,6 +10,9 @@ jobs:
         steps:
             - uses: actions/checkout@v5
 
+            - name: Check Get version
+              run: git --version
+
             - name: Set up Go
               uses: actions/setup-go@v5
               with:
